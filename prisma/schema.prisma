@@ -1,0 +1,45 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id    Int     @id @default(autoincrement())
+  email String  @unique
+  name  String?
+}
+model BlogPost {
+id         String   @id @default(uuid())
+  title      String
+  content    String
+  imageUrl   String
+  authorId   String
+  authorName String
+  authorImage String
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  status      String   @default("draft") // or "public", "private"
+}
+model Like {
+  id        String   @id @default(uuid())
+  postId    String   // Which post is liked
+  userId    String   // Who liked it
+  createdAt DateTime @default(now())
+  
+  @@unique([postId, userId]) // Prevent duplicate likes
+}
+
+model Comment {
+  id        String   @id @default(uuid())
+  postId    String   // Which post this comment belongs to
+  userId    String   // Who wrote the comment
+  content   String   // The actual comment text
+  createdAt DateTime @default(now())
+  
+  // Optional: For future features
+  // parentId String?  // If replying to another comment
+}
