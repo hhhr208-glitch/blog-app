@@ -33,3 +33,6 @@ A modern, full-stack blog platform built with Next.js 14, TypeScript, and Tailwi
    ```bash
    git clone https://github.com/hhhr208-glitch/blog-platform.git
    cd blog-platform
+
+then connect your db to this code and also connect kidne to this code and after all that you good !
+see how it look like in here https://youtu.be/9tecaGgT0yU?si=caqOABYvi-F8Gkv9
