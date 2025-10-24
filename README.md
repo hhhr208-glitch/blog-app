@@ -7,7 +7,7 @@ A modern, full-stack blog platform built with Next.js 14, TypeScript, and Tailwi
 - **🔐 Authentication** - Secure login with Kinde Auth
 - **📝 CRUD Operations** - Create, read, update, and delete blog posts
 - **🎨 Modern UI** - Built with Tailwind CSS and shadcn/ui components
-- **🚀 Next.js 14** - Latest App Router with React Server Components
+- **🚀 Next.js 15** - Latest App Router with React Server Components
 - **📱 Responsive** - Works perfectly on all devices
 - **💾 Database** - Prisma with SQLite/PostgreSQL
 
