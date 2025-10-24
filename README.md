@@ -13,7 +13,7 @@ A modern, full-stack blog platform built with Next.js 14, TypeScript, and Tailwi
 
 ## 🛠️ Tech Stack
 
-- **Framework**: Next.js 14 (App Router)
+- **Framework**: Next.js 15 (App Router)
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS
 - **UI Components**: shadcn/ui
